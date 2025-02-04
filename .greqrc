@@ -1,0 +1,12 @@
+# Default configuration for greq
+default_headers:
+  Accept: application/json
+  User-Agent: greq/1.0
+  # Add your default Authorization token here
+  # Authorization: Bearer your-default-token
+
+# Default timeout in seconds
+timeout: 30
+
+# Optional base URL for relative paths
+base_url: https://api.example.com 
