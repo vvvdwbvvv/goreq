@@ -13,21 +13,6 @@ import (
 	"github.com/fatih/color"
 )
 
-type RequestOptions struct {
-	Method         string
-	URL            string
-	Headers        map[string]string
-	Body           io.Reader
-	FollowRedirect bool
-	BasicAuth      string
-	Proxy          string
-	Insecure       bool
-	Silent         bool
-	Verbose        bool
-	OutputFile     string
-	IncludeHeaders bool
-}
-
 // DoRequest performs an HTTP request with the given method, URL, body and headers
 func DoRequest(opts RequestOptions) ([]byte, error) {
 	// Parse the URL

@@ -60,11 +60,3 @@ func colorizeJSON(line string) {
 		fmt.Println(line)
 	}
 }
-
-func parseHeader(header string) (string, string) {
-	parts := strings.SplitN(header, ":", 2)
-	if len(parts) != 2 {
-		return "", ""
-	}
-	return strings.TrimSpace(parts[0]), strings.TrimSpace(parts[1])
-}

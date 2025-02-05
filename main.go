@@ -119,3 +119,12 @@ func parseQueryParams(query string) map[string]string {
 	}
 	return params
 }
+
+// parseHeader splits a header string into key and value
+func parseHeader(header string) (string, string) {
+	parts := strings.SplitN(header, ":", 2)
+	if len(parts) != 2 {
+		return "", ""
+	}
+	return strings.TrimSpace(parts[0]), strings.TrimSpace(parts[1])
+}
