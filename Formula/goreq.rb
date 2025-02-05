@@ -3,7 +3,7 @@ class Goreq < Formula
     homepage "https://github.com/vvvdwbvvv/goreq"
     version "1.0.0"
     url "https://github.com/vvvdwbvvv/goreq/releases/download/v1.0.0/goreq-darwin-arm64.tar.gz"
-    sha256 "e76272f9f6e0df22ef53830bdccfaa4442046902302f7694378ec45a8f7e31d2"
+    sha256 "13595098adcd1be1c8b651fc1394e8ffdbd084fc5d2f60f64cfd9f143f6fd7b3"
   
     def install
       bin.install "goreq"
